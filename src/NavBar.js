@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
-import "./NavBar.css";
 
 export default function ContactUs() {
   return <nav className="nav">
