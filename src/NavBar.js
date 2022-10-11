@@ -1,9 +1,12 @@
 import React from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import MiracoolLogo from "./assets/miracool_logo.jpg";
 
 export default function ContactUs() {
   return <nav className="nav">
-    <Link to="/" className="miracool">Miracool</Link>
+    <Link to="/" className="miracool">
+      <img className="navLogo" src={MiracoolLogo} alt="miracool" />
+    </Link>
     <ul>
       <CustomLink to="/">Home</CustomLink>
       <CustomLink to="/aboutus">About Us</CustomLink>
