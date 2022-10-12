@@ -1,8 +1,8 @@
 import React from "react"
 
 export default function Home() {
-  return <div className="homeWrapper">
-    <div className="homeBG" >
+  return <div className="home-wrapper">
+    <div className="home-bg" >
       <h1>home</h1>
       <p>will add button for requesting a quote?</p>
       <p className="todo">NOTE: share with me what to add here: ex. images, text, functionalities</p>
