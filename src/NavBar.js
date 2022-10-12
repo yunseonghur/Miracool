@@ -1,19 +1,40 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import MiracoolLogo from "./assets/miracool_logo.jpg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons'
+
+import './NavBar.css';
 
 export default function ContactUs() {
-  return <nav className="nav">
-    <Link to="/" className="miracool">
-      <img className="navLogo" src={MiracoolLogo} alt="miracool" />
-    </Link>
-    <ul>
-      <CustomLink to="/">Home</CustomLink>
-      <CustomLink to="/aboutus">About Us</CustomLink>
-      <CustomLink to="/services">Services</CustomLink>
-      <CustomLink to="/contactus">Contact Us</CustomLink>
-    </ul>
-  </nav>
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  return (
+    <nav className="nav">
+      <Link to="/" className="miracool">
+        <img className="nav-logo" src={MiracoolLogo} alt="miracool" />
+      </Link>
+      <ul className={isMobile ? "nav-links-mobile" : "nav-links"}
+      onClick={() => setIsMobile(false)}
+      >
+        <CustomLink className="home" to="/">Home</CustomLink>
+        <CustomLink className="aboutus" to="/aboutus">About Us</CustomLink>
+        <CustomLink className="services" to="/services">Services</CustomLink>
+        <CustomLink className="contactus" to="/contactus">Contact Us</CustomLink>
+      </ul>
+
+      <button className="mobile-menu-icon"
+      onClick={() => setIsMobile(!isMobile)}
+      >
+        {isMobile ? (
+          <FontAwesomeIcon icon={faTimes} />
+        ) : (
+          <FontAwesomeIcon icon={faBars} />
+        )}
+      </button>
+    </nav>
+  )
 }
 
 function CustomLink({ to, children, ...props }) {
