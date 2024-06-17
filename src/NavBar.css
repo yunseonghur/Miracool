@@ -46,7 +46,7 @@
 
 @media screen and (max-width: 780px) {
   .nav-logo {
-    height: 80px;
+    height: 60px;
     display: flex;
     top: 0;
     left: 0;
@@ -85,8 +85,8 @@
     background-color: white;
     border: none;
     outline: none;
-    top: 25px;
-    right: 35px;
+    top: 15px;
+    right: 15px;
   }
 
   .nav a {

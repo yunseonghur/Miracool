@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
-import MiracoolLogo from "./assets/miracool_logo.jpg";
+import MiracoolLogo from "./assets/miracool_logo.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons'
 
