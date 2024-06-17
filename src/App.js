@@ -1,12 +1,17 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom";
 
+// eslint-disable-next-line
 import NavBar from './NavBar.js';
 
 import ComingSoon from './pages/ComingSoon.js';
+// eslint-disable-next-line
 import Home from './pages/Home.js';
+// eslint-disable-next-line
 import AboutUs from './pages/AboutUs.js';
+// eslint-disable-next-line
 import Services from './pages/Services.js';
+// eslint-disable-next-line
 import ContactUs from './pages/ContactUs.js';
 
 function App() {
