@@ -1,13 +1,37 @@
+.navHeader {
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.navHeader .navMsg {
+  line-height: 40px;
+  text-align: center;
+  font-size: 24px;
+  text-decoration: none;
+  color: #000;
+} 
+
+.navHeader .navContact {
+  letter-spacing: 1.5px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #256EBD;
+}
+
 .nav {
   background-color: white;
   color: #333;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
-  padding: 0 1rem;
+  padding: 0 5rem;
   font-size: 1.2rem;
-  font-family: 'Titillium Web', sans-serif;
+  /* min-height: 50px; */
 }
 
 .nav-links {
@@ -15,7 +39,7 @@
   margin: 0;
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 4rem;
 }
 
 .nav a {
@@ -37,7 +61,8 @@
 }
 
 .nav-logo {
-  height: 100px;
+  height: 80px;
+  margin: 10px;
 }
 
 .mobile-menu-icon {
@@ -45,8 +70,17 @@
 }
 
 @media screen and (max-width: 780px) {
+  .navHeader {
+    max-width: 90%;
+    margin-top: 0px;
+  }
+
+  .navHeader .navMsg {
+    display: none;
+  }
+
   .nav-logo {
-    height: 60px;
+    height: 50px;
     display: flex;
     top: 0;
     left: 0;
@@ -85,8 +119,8 @@
     background-color: white;
     border: none;
     outline: none;
-    top: 15px;
-    right: 15px;
+    top: 20px;
+    right: 25px;
   }
 
   .nav a {
@@ -103,11 +137,12 @@
 
 
 @media screen and (min-width: 781px) {
+
   .nav-links-mobile {
     padding: 0;
     margin: 0;
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 4rem;
   }
 }

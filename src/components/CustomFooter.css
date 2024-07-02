@@ -1,0 +1,24 @@
+.footer-wrapper {
+  padding: 20px 40px;
+  background-color: #256EBD;
+  color: #fff;
+}
+
+.contact-method {
+  font-size: 20px;
+}
+
+.contact-method a {
+  text-decoration: none;
+  color: #fff;
+  padding: 16px;
+}
+
+.emergency-text {
+  color: red;
+
+}
+
+.float-end a {
+  color: #000;
+}
