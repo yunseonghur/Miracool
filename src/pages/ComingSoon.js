@@ -8,7 +8,7 @@ export default function ComingSoon() {
 
         <div className="header">
           <a href=".">
-            <img className="nav-logo" src={MiracoolLogo} alt="miracool" />
+          <img className="nav-logo" src={MiracoolLogo} alt="miracool" />
           </a>
         </div>
 
