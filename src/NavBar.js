@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import MiracoolLogo from "./assets/Miracool_transparent_sm.svg";
 import CallUsNow from "./assets/icon-callusnow.png";
-import CallUsNowB from "./assets/icon-callusnow-bk.png";
+// import CallUsNowB from "./assets/icon-callusnow-bk.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons'
 

@@ -32,7 +32,7 @@ export default function Home() {
    
       <h2 className="middle-text">Now serving the entire Lower Mainland</h2> 
 
-      <div className="text-center youtube"><a><img width="48" height="48" src="https://img.icons8.com/color/48/youtube-play.png" alt="youtube-play"/>&nbsp;<h4 className="youtube-name">캐나다 미라쿨</h4></a></div>
+      <div className="text-center youtube"><a href="https://www.youtube.com/channel/UCzGkMYknFTq0vT0rHw_tp5w"><img width="48" height="48" src="https://img.icons8.com/color/48/youtube-play.png" alt="youtube-play"/>&nbsp;<h4 className="youtube-name">캐나다 미라쿨</h4></a></div>
     </div>
 
   </div>

@@ -18,7 +18,7 @@ export default function CustomFooter() {
       <div className="text-center emergency-text" >Emergency services availlable</div>
 
       <p className="float-end">
-        <a href="#" data-toggle="tooltip" title="Back to top">Back to top</a>
+        <a href="/#" data-toggle="tooltip" title="Back to top">Back to top</a>
       </p>
       <p>
           © {year} Miracool Air Conditioning LTD. 
