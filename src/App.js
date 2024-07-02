@@ -1,26 +1,32 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom";
 
-// eslint-disable-next-line
 import NavBar from './NavBar.js';
+import CustomFooter from './components/CustomFooter.js';
 
+// eslint-disable-next-line
 import ComingSoon from './pages/ComingSoon.js';
-// eslint-disable-next-line
+
 import Home from './pages/Home.js';
-// eslint-disable-next-line
 import AboutUs from './pages/AboutUs.js';
-// eslint-disable-next-line
 import Services from './pages/Services.js';
-// eslint-disable-next-line
 import ContactUs from './pages/ContactUs.js';
+import Translate from './pages/Translate.js';
 
 function App() {
   return (
     <div className="App">
+      <NavBar />
         <Routes>
-          <Route path="/" index element={<ComingSoon />} />
+          {/* <Route path="/" index element={<ComingSoon />} /> */}
+          <Route path="/" index element={<Home />} />
+          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/translate" element={<Translate />} />
         </Routes>
       {/* <header className="App-header"> */}
+      <CustomFooter />
     </div>
   );
 }
@@ -28,13 +34,8 @@ function App() {
 // function App() {
 //   return (
 //     <div className="App">
-//       <NavBar />
 //         <Routes>
 //           <Route path="/" index element={<ComingSoon />} />
-//           <Route path="/" index element={<Home />} />
-//           <Route path="/aboutus" element={<AboutUs />} />
-//           <Route path="/services" element={<Services />} />
-//           <Route path="/contactus" element={<ContactUs />} />
 //         </Routes>
 //       {/* <header className="App-header"> */}
 //     </div>

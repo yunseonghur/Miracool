@@ -1,0 +1,18 @@
+.about-us-wrapper {
+  /* margin-top: 16px;
+  margin-bottom: 16px; */
+}
+
+/* .about-us-wrapper .banner {
+  height: 150px;
+} */
+
+.about-us-wrapper .section {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.about-us-wrapper .divider {
+  width: 50%;
+  margin: 0 auto;
+}
