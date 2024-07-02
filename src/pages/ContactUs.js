@@ -104,6 +104,7 @@ function CustomForm() {
     const { inputFirstName, inputLastName, inputEmail, inputPhone, inputMessage } = form
     const newErrors = {}
     const emailPattern = new RegExp(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/);
+    //eslint-disable-next-line
     const phonePattern = new RegExp(/^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/);
     if (!inputFirstName || inputFirstName === "") {
       newErrors.inputFirstName = "First name is required."
