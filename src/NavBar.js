@@ -32,7 +32,8 @@ export default function ContactUs() {
           <CustomLink className="aboutus" to="/aboutus">About Us</CustomLink>
           <CustomLink className="services" to="/services">Services & Projects</CustomLink>
           <CustomLink className="contactus" to="/contactus">Contact Us</CustomLink>
-          <CustomLink className="translate" to="/translate">한국어</CustomLink>
+          {/* <CustomLink className="translate" to="/translate">한국어navLi</CustomLink> */}
+          <CustomLink className="translate" to="/translate"></CustomLink>
         </ul>
 
         <button className="mobile-menu-icon"
