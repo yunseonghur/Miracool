@@ -21,6 +21,7 @@
 .contactus-wrapper .submit-btn {
   background-color: #F4911E; 
   color: #fff;
+  border: none;
 }
 
 .contactus-wrapper .submit-btn:hover {
