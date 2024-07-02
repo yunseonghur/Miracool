@@ -33,7 +33,7 @@ const ImageGallery = (images) => {
       <div style={{width: "100%", height: "100vh", background: "black", display: "flex", justifyContent: "center", alignItems: "center", overflow: "hidden"}}>
         <button onClick={()=>imgAction()}style={{position: "absolute", top: "10px", right: "10px"}}></button>
         <button onClick={()=>imgAction("previous-img")}>Previous</button>
-        <img src={data.img} style={{width: "auto", maxWidth: "90%", maxHeight: "90%"}} />
+        <img src={data.img} style={{width: "auto", maxWidth: "90%", maxHeight: "90%"}} alt=""/>
         <button onClick={()=>imgAction("next-img")}>Next</button>
       </div>
     }
