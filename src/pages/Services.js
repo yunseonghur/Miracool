@@ -69,7 +69,7 @@ function CustomGallery(data) {
   const listItems = data.map((item) => {
       return (
         <>
-        <h4 className="subtitle text-center" style={{ backgroundColor: "#CEDAED", lineHeight: "2em"}}>{item.name}</h4>
+        <h4 id={item.id} className="subtitle text-center" style={{ backgroundColor: "#CEDAED", lineHeight: "2em"}}>{item.name}</h4>
         {ImageGallery(item.collection)}
         </>
       );
@@ -77,70 +77,38 @@ function CustomGallery(data) {
   return <div>{listItems}</div>;
 }
 
-// const images = ["https://picsum.photos/1500/2000"];
-
-// const commImages = [  
-//   { name: "Fan Coil", collection: ["https://ibb.co/kJhmTYk", "https://ibb.co/xfV0NrQ", "https://ibb.co/F33G1zH", "https://ibb.co/McLt9xB"] },
-//   { name: "RTU", collection: ["https://ibb.co/CBMWg64", "https://ibb.co/xsM67SN", "https://ibb.co/G2rZ7jC", "https://ibb.co/w7WW8t2", "https://ibb.co/cK5db7P"] },
-//   { name: "Heat Pump (Air / Water)", collection: ["https://ibb.co/vQqZDzR", "https://ibb.co/DrrshVQ", "https://ibb.co/PDmwGyR", "https://ibb.co/fNTsJ65", "https://ibb.co/GFhyszr", "https://ibb.co/0qs1Yjw"] },
-//   { name: "Exhaust Fan", collection: ["https://ibb.co/fddbXsx", "https://ibb.co/px0m7kf"] },
-//   { name: "Duct", collection: ["https://ibb.co/rdC3T6f", "https://ibb.co/mJJDcrT"] },
-//   { name: "Walk-in Cooler / Freezer", collection: ["https://ibb.co/9bcZtjq", "https://ibb.co/bvfmnQy", "https://ibb.co/278zdXz"] }
-// ]
-
-// https://ibb.co/hFS7H5r
-// https://ibb.co/BrSFCjx
-// https://ibb.co/rGpWThy
-// https://ibb.co/hXKBrQs
-// https://ibb.co/JK8LVP6
-// https://ibb.co/k66xd99
-// https://ibb.co/y82Dz9f
-// https://ibb.co/xzG6wf0
-// https://ibb.co/1XksNGt
-// https://ibb.co/C9zMpHg
-// https://ibb.co/rtTy5w9
-// https://ibb.co/kyLSX25
-// https://ibb.co/fYQCJ8F
-// https://ibb.co/FBSQM3F
-// https://ibb.co/59x5B6d
-// https://ibb.co/JqMMXvh
-// https://ibb.co/HKPyysZ
-// https://ibb.co/JqSvNdj
-// https://ibb.co/RSfJqzt
-// https://ibb.co/9nKxS1X
-
 const commServices = [
-  { name: "Fan Coil", collection: [
+  { id: "cs1", name: "Fan Coil", collection: [
     fanCoil1, fanCoil2, fanCoil3, fanCoil4
   ] },
-  { name: "RTU", collection: [
+  { id: "cs2", name: "RTU", collection: [
     rtu1, rtu4, rtu5, rtu3, rtu2
   ] },
-  { name: "Heat Pump (Air / Water)", collection: [
+  { id: "cs3", name: "Heat Pump (Air / Water)", collection: [
     heatpump1, heatpump2, heatpump3, heatpump4, heatpump5, heatpump6
   ] },
-  { name: "Exhaust Fan", collection: [
+  { id: "cs4", name: "Exhaust Fan", collection: [
     exhaustFan1, exhaustFan2
   ] },
-  { name: "Duct", collection: [
+  { id: "cs5", name: "Duct", collection: [
     duct1, duct2
   ] },
-  { name: "Walk-in Cooler / Freezer", collection: [
+  { id: "cs6", name: "Walk-in Cooler / Freezer", collection: [
     walkInCooler1, walkInCooler2, walkInCooler3
   ] }
 ];
 
 const resiServices = [
-  { name: "Central Duct", collection: [
+  { id: "cs1", name: "Central Duct", collection: [
     centralDucted1, centralDucted2, centralDucted3, centralDucted4
   ] },
-  { name: "Mini Split", collection: [
+  { id: "cs2", name: "Mini Split", collection: [
     miniSplit1, miniSplit2, miniSplit3, miniSplit4, miniSplit5, miniSplit6, miniSplit7, miniSplit8, miniSplit9
   ] },
-  { name: "Furnace", collection: [
+  { id: "cs3", name: "Furnace", collection: [
     furnace1, furnace2, furnace3, furnace4, furnace5
   ] },
-  { name: "Boiler", collection: [
+  { id: "cs4", name: "Boiler", collection: [
     boiler1, boiler2
   ] }
 ];
