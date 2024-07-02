@@ -6,12 +6,17 @@
 
 .contact-method {
   font-size: 20px;
+  padding: 16px;
+}
+
+.contact-method div {
+  display: inline-block;
+  margin: 0 8px;
 }
 
 .contact-method a {
   text-decoration: none;
   color: #fff;
-  padding: 16px;
 }
 
 .emergency-text {
@@ -21,4 +26,8 @@
 
 .float-end a {
   color: #000;
+}
+
+.copyright {
+  display: inline-flex;
 }

@@ -44,7 +44,7 @@ const getSectionContent = (displayObjs, itemPerRow) => {
   let rowContent = [];
   let counter = 0;
   for (let item of displayObjs) {    
-    rowContent.push(<Col md style={{ padding: '12px' }}><ServiceCard serviceName={item.name} serviceIcon={item.imgSrc} /></Col>);
+    rowContent.push(<Col md style={{ padding: '12px' }}><ServiceCard serviceId={item.id} serviceName={item.name} serviceIcon={item.imgSrc} /></Col>);
     counter++;
 
     if (counter === itemPerRow){
@@ -84,17 +84,17 @@ const ServiceCard = (props) => {
 }
 
 const commServices = [
-  { name: "Fan Coil", imgSrc: fanCoil },
-  { name: "RTU", imgSrc: rtu },
-  { name: "Heat Pump (Air / Water)", imgSrc: heatpump },
-  { name: "Exhaust Fan", imgSrc: exhaustFan },
-  { name: "Duct", imgSrc: duct },
-  { name: "Walk-in Cooler / Freezer", imgSrc: walkInCooler }
+  { id: "cs1", name: "Fan Coil", imgSrc: fanCoil },
+  { id: "cs2", name: "RTU", imgSrc: rtu },
+  { id: "cs3", name: "Heat Pump (Air / Water)", imgSrc: heatpump },
+  { id: "cs4", name: "Exhaust Fan", imgSrc: exhaustFan },
+  { id: "cs5", name: "Duct", imgSrc: duct },
+  { id: "cs6", name: "Walk-in Cooler / Freezer", imgSrc: walkInCooler }
 ];
 
 const resiServices = [
-  { name: "Central Duct", imgSrc: centralDucted },
-  { name: "Mini Split", imgSrc: miniSplit },
-  { name: "Furnace", imgSrc: furnace },
-  { name: "Boiler", imgSrc: boiler }
+  { id: "rs1", name: "Central Duct", imgSrc: centralDucted },
+  { id: "rs2", name: "Mini Split", imgSrc: miniSplit },
+  { id: "rs3", name: "Furnace", imgSrc: furnace },
+  { id: "rs4", name: "Boiler", imgSrc: boiler }
 ];
