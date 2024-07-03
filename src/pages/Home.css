@@ -36,6 +36,18 @@
   margin-bottom: 16px;
 } */
 
+.home-content .section .serviceLink {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.home-content .section .serviceLink:hover {
+  color: #000;
+  opacity: 50%;
+  transition: .3s ease-in-out;
+}
+
 .home-content .section .serviceImage {
   max-height: 280px;
   object-fit: cover;
