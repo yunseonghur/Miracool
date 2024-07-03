@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import fanCoil from "../assets/fancoil_4.jpg";
 import rtu from "../assets/rtu_4_crop.jpg";
@@ -70,13 +71,16 @@ function CustomSection({ subtitle, displayObjs, itemPerRow }) {
 }
 
 const ServiceCard = (props) => {
+  const linkTo = "/services#" + props.serviceId;
   return (
   <>
     <Card>
-      <Card.Img className="serviceImage" variant="top" src={props.serviceIcon} />
-      <Card.Body>
-        <Card.Title className="text-center">{props.serviceName}</Card.Title>
-      </Card.Body>
+      <Link className="serviceLink" to={linkTo}>
+        <Card.Img className="serviceImage" variant="top" src={props.serviceIcon} />
+        <Card.Body>
+          <Card.Title className="text-center">{props.serviceName}</Card.Title>
+        </Card.Body>
+      </Link>
     </Card>
   </>
 
