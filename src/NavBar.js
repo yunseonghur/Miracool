@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import MiracoolLogo from "./assets/Miracool_transparent_sm.svg";
 import CallUsNow from "./assets/icon-callusnow.png";
-import CallUsNowB from "./assets/icon-callusnow-bk.png";
+// import CallUsNowB from "./assets/icon-callusnow-bk.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons'
 
@@ -32,7 +32,7 @@ export default function ContactUs() {
           <CustomLink className="aboutus" to="/aboutus">About Us</CustomLink>
           <CustomLink className="services" to="/services">Services & Projects</CustomLink>
           <CustomLink className="contactus" to="/contactus">Contact Us</CustomLink>
-          <CustomLink className="translate" to="/translate">한국어</CustomLink>
+          {/* <CustomLink className="translate" to="/translate">한국어navLi</CustomLink> */}
         </ul>
 
         <button className="mobile-menu-icon"

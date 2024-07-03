@@ -1,6 +1,5 @@
 import React from "react"
 import "./Home.css";
-// import CustomFooter from '../components/CustomFooter';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -10,7 +9,7 @@ import Card from 'react-bootstrap/Card';
 import fanCoil from "../assets/fancoil_4.jpg";
 import rtu from "../assets/rtu_4_crop.jpg";
 import heatpump from "../assets/c_heatpump_2_crop.jpg";
-import exhaustFan from "../assets/c_exhaustfan_1.jpg";
+import exhaustFan from "../assets/c_exhaustfan_1_crop.jpg";
 import duct from "../assets/c_duct_1_crop.jpg";
 import walkInCooler from "../assets/c_cooler_1_crop.jpg";
 import centralDucted from "../assets/r_duct_3_crop.jpg";
@@ -22,7 +21,8 @@ import boiler from "../assets/r_boiler_1.jpg";
 export default function Home() {
   return (
   <div className="home-wrapper">
-    <div className="home-bg" >
+    <div className="home-bg-img"></div>
+    <div className="home-bg-text">
       <p className="home-title">Experts at Service/Repair, Preventative Maintenance, Quality Installation</p>
     </div>
     
@@ -32,7 +32,7 @@ export default function Home() {
    
       <h2 className="middle-text">Now serving the entire Lower Mainland</h2> 
 
-      <div className="text-center youtube"><a><img width="48" height="48" src="https://img.icons8.com/color/48/youtube-play.png" alt="youtube-play"/>&nbsp;<h4 className="youtube-name">캐나다 미라쿨</h4></a></div>
+      <div className="text-center youtube"><a href="https://www.youtube.com/channel/UCzGkMYknFTq0vT0rHw_tp5w"><img width="48" height="48" src="https://img.icons8.com/color/48/youtube-play.png" alt="youtube-play"/>&nbsp;<h4 className="youtube-name">캐나다 미라쿨</h4></a></div>
     </div>
 
   </div>
@@ -44,7 +44,7 @@ const getSectionContent = (displayObjs, itemPerRow) => {
   let rowContent = [];
   let counter = 0;
   for (let item of displayObjs) {    
-    rowContent.push(<Col md style={{ padding: '12px' }}><ServiceCard serviceName={item.name} serviceIcon={item.imgSrc} /></Col>);
+    rowContent.push(<Col md style={{ padding: '12px' }}><ServiceCard serviceId={item.id} serviceName={item.name} serviceIcon={item.imgSrc} /></Col>);
     counter++;
 
     if (counter === itemPerRow){
@@ -84,17 +84,17 @@ const ServiceCard = (props) => {
 }
 
 const commServices = [
-  { name: "Fan Coil", imgSrc: fanCoil },
-  { name: "RTU", imgSrc: rtu },
-  { name: "Heat Pump (Air / Water)", imgSrc: heatpump },
-  { name: "Exhaust Fan", imgSrc: exhaustFan },
-  { name: "Duct", imgSrc: duct },
-  { name: "Walk-in Cooler / Freezer", imgSrc: walkInCooler }
+  { id: "cs1", name: "Fan Coil", imgSrc: fanCoil },
+  { id: "cs2", name: "RTU", imgSrc: rtu },
+  { id: "cs3", name: "Heat Pump (Air / Water)", imgSrc: heatpump },
+  { id: "cs4", name: "Exhaust Fan", imgSrc: exhaustFan },
+  { id: "cs5", name: "Duct", imgSrc: duct },
+  { id: "cs6", name: "Walk-in Cooler / Freezer", imgSrc: walkInCooler }
 ];
 
 const resiServices = [
-  { name: "Central Duct", imgSrc: centralDucted },
-  { name: "Mini Split", imgSrc: miniSplit },
-  { name: "Furnace", imgSrc: furnace },
-  { name: "Boiler", imgSrc: boiler }
+  { id: "rs1", name: "Central Duct", imgSrc: centralDucted },
+  { id: "rs2", name: "Mini Split", imgSrc: miniSplit },
+  { id: "rs3", name: "Furnace", imgSrc: furnace },
+  { id: "rs4", name: "Boiler", imgSrc: boiler }
 ];

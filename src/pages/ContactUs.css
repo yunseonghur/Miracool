@@ -1,0 +1,31 @@
+.contactus-wrapper {
+  max-width: 960px;
+  margin-top: 30px;
+}
+
+.contactus-wrapper .mandatory, .contactus-wrapper .red-text{
+  color: red;
+}
+
+.contactus-wrapper .contact-info p{
+  font-size: 18px;
+}
+
+.contactus-wrapper .contact-info .info-group{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.contactus-wrapper .submit-btn {
+  background-color: #F4911E; 
+  color: #fff;
+  border: none;
+}
+
+.contactus-wrapper .submit-btn:hover {
+  /* background-color: #25BABD; */
+  background-color: #256EBD;
+  color: #fff;
+}

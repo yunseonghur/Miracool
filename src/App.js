@@ -11,6 +11,7 @@ import Home from './pages/Home.js';
 import AboutUs from './pages/AboutUs.js';
 import Services from './pages/Services.js';
 import ContactUs from './pages/ContactUs.js';
+// eslint-disable-next-line
 import Translate from './pages/Translate.js';
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contactus" element={<ContactUs />} />
-          <Route path="/translate" element={<Translate />} />
+          {/* <Route path="/translate" element={<Translate />} /> */}
         </Routes>
       {/* <header className="App-header"> */}
       <CustomFooter />
