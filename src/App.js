@@ -23,7 +23,7 @@ function App() {
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contactus" element={<ContactUs />} />
-          <Route path="/translate" element={<Translate />} />
+          {/* <Route path="/translate" element={<Translate />} /> */}
         </Routes>
       {/* <header className="App-header"> */}
       <CustomFooter />

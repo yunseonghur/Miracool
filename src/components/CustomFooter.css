@@ -31,3 +31,14 @@
 .copyright {
   display: inline-flex;
 }
+
+@media screen and (max-width: 780px) {
+  .copyright {
+    display: block;
+    text-align: center;
+  }
+  .float-end {
+    float: none !important;
+    text-align: center;
+  }
+}
