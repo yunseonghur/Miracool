@@ -133,6 +133,11 @@
     background-color: #5A5A5A;
     color: white;
   }
+  .nav li.active {
+    border-bottom: none;
+    background-color: #256EBD;
+    color: white;
+  }
 }
 
 

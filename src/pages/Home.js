@@ -1,6 +1,5 @@
 import React from "react"
 import "./Home.css";
-// import CustomFooter from '../components/CustomFooter';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -10,7 +9,7 @@ import Card from 'react-bootstrap/Card';
 import fanCoil from "../assets/fancoil_4.jpg";
 import rtu from "../assets/rtu_4_crop.jpg";
 import heatpump from "../assets/c_heatpump_2_crop.jpg";
-import exhaustFan from "../assets/c_exhaustfan_1.jpg";
+import exhaustFan from "../assets/c_exhaustfan_1_crop.jpg";
 import duct from "../assets/c_duct_1_crop.jpg";
 import walkInCooler from "../assets/c_cooler_1_crop.jpg";
 import centralDucted from "../assets/r_duct_3_crop.jpg";
@@ -22,7 +21,8 @@ import boiler from "../assets/r_boiler_1.jpg";
 export default function Home() {
   return (
   <div className="home-wrapper">
-    <div className="home-bg" >
+    <div className="home-bg-img"></div>
+    <div className="home-bg-text">
       <p className="home-title">Experts at Service/Repair, Preventative Maintenance, Quality Installation</p>
     </div>
     

@@ -18,7 +18,7 @@ export default function CustomFooter() {
         <div className="text-center emergency-text" ><b>Emergency services availlable</b></div>
 
         <div className="copyright mt-3">
-          Copyright © {year} Miracool Air Conditioning LTD. 
+          © {year} Miracool Air Conditioning LTD. 
             {/* · <a href="#">Privacy</a> · <a href="#">Terms</a> */}
         </div>
         <div className="float-end mt-3">
