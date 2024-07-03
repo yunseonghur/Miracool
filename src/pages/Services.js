@@ -99,16 +99,16 @@ const commServices = [
 ];
 
 const resiServices = [
-  { id: "cs1", name: "Central Duct", collection: [
+  { id: "rs1", name: "Central Duct", collection: [
     centralDucted1, centralDucted2, centralDucted3, centralDucted4
   ] },
-  { id: "cs2", name: "Mini Split", collection: [
+  { id: "rs2", name: "Mini Split", collection: [
     miniSplit1, miniSplit2, miniSplit3, miniSplit4, miniSplit5, miniSplit6, miniSplit7, miniSplit8, miniSplit9
   ] },
-  { id: "cs3", name: "Furnace", collection: [
+  { id: "rs3", name: "Furnace", collection: [
     furnace1, furnace2, furnace3, furnace4, furnace5
   ] },
-  { id: "cs4", name: "Boiler", collection: [
+  { id: "rs4", name: "Boiler", collection: [
     boiler1, boiler2
   ] }
 ];
