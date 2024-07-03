@@ -11,6 +11,7 @@ import Home from './pages/Home.js';
 import AboutUs from './pages/AboutUs.js';
 import Services from './pages/Services.js';
 import ContactUs from './pages/ContactUs.js';
+// eslint-disable-next-line
 import Translate from './pages/Translate.js';
 
 function App() {
