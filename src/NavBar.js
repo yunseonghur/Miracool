@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
-import MiracoolLogo from "./assets/Miracool_transparent_sm.svg";
+import MiracoolLogo from "./assets/Miracool_transparent_sm.png";
 import CallUsNow from "./assets/icon-callusnow.png";
 // import CallUsNowB from "./assets/icon-callusnow-bk.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
