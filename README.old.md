@@ -1,2 +1,0 @@
-# Miracool
-client project
